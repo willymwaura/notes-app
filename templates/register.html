@@ -1,0 +1,11 @@
+{% for message in messages%}
+{{message}}
+{% endfor %}
+<form method="POST"action="register">
+     {% csrf_token %}
+      {{ form.as_p}}
+      <input type="submit" >
+
+
+</form>
+<small>already have an account ? <a href ="#">sign in </a></small>

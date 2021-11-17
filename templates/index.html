@@ -1,0 +1,7 @@
+{%load static%}
+ 
+ {% for instance in object_list%}
+  <h1> {{instance.name}}</h1>
+  <p>{{instance.desc}}</p>
+  {% endfor %}
+ 
